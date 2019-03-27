@@ -1,0 +1,47 @@
+<!--pages/look_order/look_order.wxml-->
+<view>
+  <text>基础信息</text>
+  <view>
+    <text>工单信息:</text>
+    <text>{{work_msg}}</text>
+  </view>
+  <view>
+    <text>创建时间:</text>
+    <text>{{create_time}}</text>
+  </view>
+  <view>
+    <text>创建人:</text>
+    <text>{{adc_person}}</text>
+  </view>
+  <view>
+    <text>工单状态:</text>
+    <text>{{work_statu}}</text>
+  </view>
+  <view>
+    <text>定位地址:</text>
+    <text>{{position_adr}}</text>
+  </view>
+</view>
+
+<view>
+  <text>开始信息</text>
+  <view>
+    <text>提交时间:</text>
+    <text>{{sub_time}}</text>
+  </view>
+  <view>
+    <text>主要人员:</text>
+    <text>{{adc_person}}</text>
+  </view>
+  <view>
+    <text>辅助人员:</text>
+    <text>{{sup_person}}</text>
+  </view>
+  <view>
+    <text>定位地址:</text>
+    <text>{{position_adr}}</text>
+  </view>
+  <view>
+    
+  </view>
+</view>

@@ -1,0 +1,55 @@
+<!--pages/index/index.wxml-->
+<view class='top'>
+  <view class='work_order'>
+    <text>共有{{order_num}}个工单</text>
+    <button class='add'>添加工单</button>
+  </view>
+  <view class='creat_time'>
+    <text>创建时间</text>
+    <view class="section">
+      <picker mode="date" value="{{time}}" start="2019-01-01" end="2100-12-31" bindchange="bindTimeChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+      <button class='select'>查询</button>
+    </view>
+  </view>
+  <view class='all_work'>
+    <view class='nostart'>
+      <text>未开始</text>
+      <text>{{ nostart }}</text>
+    </view>
+    <view class='underway'>
+      <text>进行中</text>
+      <text>{{ underway }}</text>
+    </view>
+    <view class='end'>
+      <text>已结束</text>
+      <text>{{ end }}</text>
+    </view>
+  </view>
+</view>
+<view class='bottom' wx:for="{{arr}}" wx:for-item="itemName">
+  <view class='list'>
+    <text>工单信息:</text>
+    <text>{{ itemName.work_msg }}</text>
+  </view>
+  <view class='list'>
+    <text>创建时间:</text>
+    <text>{{ itemName.create_time }}</text>
+  </view>
+  <view class='list'>
+    <text>创建人:</text>
+    <text>{{ itemName.create_person }}</text>
+  </view>
+  <view class='list'>
+    <text>工单状态:</text>
+    <text>{{ itemName.work_statu }}</text>
+  </view>
+  <view class='list'>
+    <text>定位地址:</text>
+    <text>{{ itemName.position_adr }}</text>
+  </view>
+  <view></view>
+</view>
